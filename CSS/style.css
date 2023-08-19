@@ -155,7 +155,7 @@
     background-color: var(--primary);
 }
 
-.signup-btn:active {
+.signup-btn:active ,.signup-btn:focus{
     background-color: #784af7d2 !important;
 }
 
@@ -209,7 +209,7 @@ textarea.form-control:focus {
     background-color: var(--primary);
 }
 
-.publishblog-btn:active {
+.publishblog-btn:active ,.publishblog-btn:focus {
     background-color: #784af7d2 !important;
 }
 
@@ -264,7 +264,7 @@ textarea.form-control:focus {
     color: var(--primary);
 }
 
-.blog-btn button:hover {
+.blog-btn button:hover ,.blog-btn button:focus {
     background-color: var(--primary);
 }
 
@@ -294,26 +294,63 @@ textarea.form-control:focus {
 }
 
 
-.h1-click{
+.h1-click {
     cursor: pointer;
 }
 
 .profile-div button {
     width: 169px;
-    
+
 }
-.proff{
+
+.proff {
     margin-top: 150px;
     margin-left: 50px;
 }
-.proff img{
+
+.proff img {
     width: 250px;
     height: 250px;
     border-radius: 15px;
 }
-.proff .name{
+.profile-name{
+    cursor: pointer;
+}
+
+.proff .name {
     margin-top: 0;
     color: var(--primary);
     font-size: 26px;
     font-weight: bold;
+}
+
+#spiner {
+    backdrop-filter: blur(2px);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    place-items: center;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#returnToBlogs , #h1-click{
+    cursor: pointer;
+}
+#prrrrof{
+    pointer-events: all;
+}
+.rela{
+    position: relative;
+    width: 180px;
+}
+label svg{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+input[type="file"]{
+    display: none;
 }

@@ -12,12 +12,14 @@
 </head>
 
 <body>
+    
+
     <div class="nav">
         <div class="header">
             <div class="head">
 
                 <h3>Personal Blogging App </h3>
-                <a href="./login.html">Login</a>
+                <a id="usertologin" href="">Login</a>
             </div>
         </div>
 
@@ -33,21 +35,25 @@
         <div class="signup-div">
             <div class="signup-inner">
 
-                <input class="form-control inputt " type="text" placeholder="First Name">
-                <input class="form-control inputt " type="text" placeholder="Last Name">
-                <input class="form-control inputt " type="text" placeholder="Email">
-                <input class="form-control inputt " type="text" placeholder="Password">
-                <input class="form-control inputt " type="text" placeholder="Repeat Password">
-                <button class="btn btn-primary signup-btn">Signup</button>
+                <input id="signFName" class="form-control inputt " type="text" placeholder="First Name">
+                <input id="signLName" class="form-control inputt " type="text" placeholder="Last Name">
+                <input id="signEmail" class="form-control inputt " type="email" placeholder="Email">
+                <input id="signPass" class="form-control inputt " type="password" placeholder="Password">
+                <input id="signRePass" class="form-control inputt " type="password" placeholder="Repeat Password">
+                <button id="signupBtn" class="btn btn-primary signup-btn">Signup</button>
             </div>
-            
+
         </div>
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>
 
-    <script src="JAVASCRIPT/app.js"></script>
+    <script type="module" src="JAVASCRIPT/app.js"></script>
 </body>
 
 </html>
